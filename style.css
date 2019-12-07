@@ -1,0 +1,28 @@
+body{
+    color: black;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+div{
+    font-size: 16px;
+}
+
+.article_class{
+    color: aqua;
+}
+
+.article_content_class{
+    color: blue;
+    padding: 4px;
+}
+
+#table_id {
+    background: #50242454;
+    padding: 6px;
+    margin: 10px;
+}
+
+ul > li:last-child{
+    background: #24255054;
+}
