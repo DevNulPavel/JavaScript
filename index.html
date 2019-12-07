@@ -7,48 +7,79 @@
     <title>Test page</title>
 </head>
 <body>
-    <div id="mainDiv">
-        <div id="contentDiv">This is text</div>
-    </div>
+    <header>
+        Это текста заголовка
+    </header>
     
-    <ul>
-        <li>Этот</li>
-        <li>тест</li>
-    </ul>
-    <ul>
-        <li>полностью</li>
-        <li>пройден</li>
-    </ul>
+    <nav>
+        Это блок навигации
+    </nav>
     
-    <a href="http://example.com/file.zip">Link1</a>
-    <a href="http://ya.ru">Link2</a>
-    
-    <table id="table_id">
-        <tr>
-            <td>Ваш возраст:</td>
+    <section>
+        Это блок секции статей
+        <article>
+            <div id="mainDiv">
+                <div id="contentDiv">This is text</div>
+            </div>
             
-            <td>
-                <label>
-                    <input type="radio" name="age" value="young" checked> младше 18
-                </label>
-                <label>
-                    <input type="radio" name="age" value="mature"> от 18 до 50
-                </label>
-                <label>
-                    <input type="radio" name="age" value="senior"> старше 60
-                </label>
-            </td>
-        </tr>
-    </table>    
+            <ul>
+                <li>Этот</li>
+                <li>тест</li>
+            </ul>
+            <ul>
+                <li>полностью</li>
+                <li>пройден</li>
+            </ul>
+            
+            <!-- С помощью target можно открывать на новой вкладке -->
+            <a href="http://example.com/file.zip">Link1</a>
+            <a href="http://ya.ru" target="_blank">Link2</a>
+            
+            <table id="table_id">
+                <tr>
+                    <td id="table_text_id">Ваш возраст:</td>
+                    
+                    <td>
+                        <label>
+                            <input type="radio" name="age" value="young" checked> младше 18
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="mature"> от 18 до 50
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="senior"> старше 60
+                        </label>
+                    </td>
+                </tr>
+            </table>    
+            
+            <br>
+            <form name="my_form">
+                <div class="article_class">Article</div>
+                <div class="article_content_class">Long article</div>
+            </form>
+            
+            <br>
+            <h1>Styles Conference</h1>
+            <p>Каждый год самые яркие веб-дизайнеры и фронтенд-разработчики собираются в Чикаго, чтобы обсудить новейшие технологии. Присоединяйся к нам этим августом!</p>
+            
+            <!-- Div нужен просто для описания конкретного класса в виде блока -->
+            <div class="test_div_class">
+                <p>Меня можно найти в...</p>
+                <p>Кроме того, у меня есть профиль на...</p>
+            </div>
+            
+            <!-- Span нужен просто для описания конкретного класса в тексте -->
+            <p>Скоро мы <span class="tooltip_class">напишем HTML</span> лучше.</p>
+        </article>
+    </section>
     
-    <br>
-    <form name="my_form">
-        <div class="article_class">Article</div>
-        <div class="article_content_class">Long article</div>
-    </form>
+    <aside>
+        Блок боговой панели, содержащий метаинформацию
+    </aside>
     
-    <br>
-    <h1>Styles Conference</h1>
-    <p>Каждый год самые яркие веб-дизайнеры и фронтенд-разработчики собираются в Чикаго, чтобы обсудить новейшие технологии. Присоединяйся к нам этим августом!</p>
+    <footer>
+        Блок конца страницы
+    </footer>
 </body>
 </html>

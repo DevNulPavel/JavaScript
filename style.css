@@ -1,28 +1,36 @@
+/* Сначала идут описания конкретных стилей для тегов */
 body{
     color: black;
     font-size: 14px;
     font-family: monospace;
 }
-
 div{
     font-size: 16px;
 }
 
+/* Затем идет описание стилей классов, начинается с точки */
 .article_class{
     color: aqua;
 }
-
 .article_content_class{
     color: blue;
     padding: 4px;
 }
+.tooltip_class{
+    color: #2a0a4e54;
+}
+.test_div_class{
+    color: #5407ac54;
+}
 
-#table_id {
+/* Затем мы можем уже указывать стили для элементов с конкретными ID с помощью # */
+#table_id, #table_text_id {
     background: #50242454;
     padding: 6px;
     margin: 10px;
 }
 
+/* Помимо прочего, можно выполнять конкретные запросы */
 ul > li:last-child{
     background: #24255054;
 }
