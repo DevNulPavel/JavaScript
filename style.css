@@ -21,7 +21,28 @@ div{
 }
 .test_div_class{
     color: #5407ac54;
+    background: #FFFFFFFF;
 }
+.test_div_class{
+    background: rgb(236, 214, 13); /* Мы можем дополнять или перезаписывать стиль если он идет ниже */
+}
+.hotdog p{ /* Имеется возможность выполнять уточнения, все параграфы в классе hotdog */
+    font-family: 'Times New Roman', Times, serif;
+}
+.hotdog p.mustard{ /* Имеется возможность выполнять уточнения, все классы mustard в параграфах, в классе hotdog */
+    font-family: 'Times New Roman', Times, serif;
+}
+.hotdog .mustard{ /* Но более понятно писать именно так, указывая подклассы, но у варианта выше - больше приоритет*/
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(255, 255, 0, 0.568);
+}
+.italic_text{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 17px;
+    width: 10em;
+}
+
 
 /* Затем мы можем уже указывать стили для элементов с конкретными ID с помощью # */
 #table_id, #table_text_id {
