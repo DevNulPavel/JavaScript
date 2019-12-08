@@ -1,0 +1,82 @@
+h1, h2, h3, h4, p {
+    margin-bottom: 20px;
+}
+
+p{
+    line-height: 5px;
+    text-align: center;
+    text-decoration: underline; /* Нижнее подчеркивание */
+    text-indent: 5px; /* Задание красной строки в тексте */
+}
+
+_section {
+    float: left; /* Все элементы секций будем распологать слева*/
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto
+}
+
+_aside {
+    float: right; /* все боковые элементы - справа */
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+}
+
+footer{
+    clear: both; /* сбрасывает режим обтекания float */
+}
+
+.content::before, .group::after {
+    content: "";
+    display: table;
+}
+
+.content::after {
+    clear: both;
+}
+
+.content {
+    clear: both;
+    *zoom: 1;
+}
+
+.container{
+    margin-top: 4px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 800px;
+    border-style: dotted;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+.hero{
+    padding: 10px 5px 5px 5px;
+}
+
+.logo {
+    float: left;
+}
+
+.button{
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.button-alt{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

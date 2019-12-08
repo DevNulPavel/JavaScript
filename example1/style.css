@@ -35,12 +35,27 @@ div{
 .hotdog .mustard{ /* Но более понятно писать именно так, указывая подклассы, но у варианта выше - больше приоритет*/
     font-family: 'Times New Roman', Times, serif;
     background: rgba(255, 255, 0, 0.568);
+    display: block;
 }
 .italic_text{
     font-style: italic;
     font-weight: bold;
     font-size: 17px;
-    width: 10em;
+    display: inline-block;
+    border-top: 2px solid rgb(104, 8, 8);
+    border-bottom: 2px solid rgb(104, 8, 8);
+    border-left: 4px solid rgb(2, 1, 1);
+    border-right: 4px solid rgb(26, 8, 104);
+    border-radius: 8px; /* для круга можно задать 50% */
+    border-top-right-radius: 3px;
+    width: 60px;
+    height: 70%;
+    margin: 10px 5px 3px 3px; /* отступы снаружи, сверху снизу слева справа */
+    padding-left: 3px; /* отступы внутри */
+    padding-right: 3px; /* отступы внутри */
+    padding-top: 3px; /* отступы внутри */
+    padding-bottom: 3px; /* отступы внутри */
+    box-sizing: border-box; /* способ вычисления размера бокса, стандартное - content-box */
 }
 
 
