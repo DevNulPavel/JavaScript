@@ -1,0 +1,40 @@
+h1, h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-layout{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 550px;
+}
+
+header{
+    border: 1px solid black;
+}
+
+section{
+    _margin-right: 160px;
+    border: 1px solid black;
+    float: left;
+    width: 390px;
+}
+
+article{
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    text-indent: 20px;
+}
+
+aside{
+    border: 1px solid black;
+    float: right;
+    width: 150px;
+}
+
+footer{
+    border: 1px solid black;
+    clear: both;
+}
